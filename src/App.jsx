@@ -58,13 +58,13 @@ const App = () => {
                   {e}
                 </td>
                 <td key={i} className="px-5 text-center">
-                  {data?.rates[e] * 1.05}
+                  {(data?.rates[e] * 1.05).toFixed(4)}
                 </td>
                 <td key={i} className="px-5 text-center">
-                  {data?.rates[e]}
+                  {(data?.rates[e] * 1)?.toFixed(4)}
                 </td>
                 <td key={i} className="px-5 text-center">
-                  {data?.rates[e] * 0.95}
+                  {(data?.rates[e] * 0.95).toFixed(4)}
                 </td>
               </tr>
             );
